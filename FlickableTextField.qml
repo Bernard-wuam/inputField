@@ -8,10 +8,11 @@ Flickable {
      height: Math.min(50,edit.contentHeight)
      contentWidth: edit.paintedWidth
      contentHeight: edit.paintedHeight
+     flickableDirection: Flickable.VerticalFlick
      clip: true
 
      ScrollBar.vertical:ScrollBar{
-         policy:ScrollBar.AsNeeded
+         policy:ScrollBar.AlwaysOn
 
      }
 
