@@ -28,9 +28,10 @@ Flickable {
              contentY = r.y+r.height-height;
      }
 
-     TextEdit {
+     TextArea {
          id: edit
          width: flick.width
+         placeholderText: "Message"
          focus: true
          wrapMode: TextEdit.Wrap
          onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
